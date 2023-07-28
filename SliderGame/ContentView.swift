@@ -17,7 +17,7 @@ struct ContentView: View {
             
             HStack {
                 Text("0")
-                Slider(value: $sliderValue, in: 0...100, step: 1)
+                UISliderRepresentation(value: $sliderValue)
                 Text("100")
             }
             
