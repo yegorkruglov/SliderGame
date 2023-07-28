@@ -19,7 +19,7 @@ struct ContentView: View {
             
             HStack {
                 Text("0")
-                UISliderRepresentation(value: $sliderValue)
+                UISliderRepresentation(value: $sliderValue, score: $score)
                 Text("100")
             }
             
@@ -32,11 +32,15 @@ struct ContentView: View {
             
             Button("Начать заново") {
                 randomizeValues()
-                score = computeScore()
             }
         }
         .padding()
-        .onAppear(perform: randomizeValues)
+        .onAppear() {
+            randomizeValues()
+        }
+        .onChange(of: sliderValue) { _ in
+            score = computeScore()
+        }
     }
     
     private func randomizeValues() {

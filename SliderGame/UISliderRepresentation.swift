@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct UISliderRepresentation: UIViewRepresentable {
+    
     @Binding var value: Double
+    @Binding var score: Int
     
     func makeUIView(context: Context) -> UISlider {
         let slider = UISlider()
@@ -24,19 +26,19 @@ struct UISliderRepresentation: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UISlider, context: Context) {
+        let alpha = Double(score) / 100
         uiView.value = Float(value)
+        uiView.thumbTintColor = .red.withAlphaComponent(CGFloat(alpha))
     }
     
     func makeCoordinator() -> Coordinator {
         Coordinator(value: $value)
     }
-        
-    
 }
 
 struct UISliderRepresentation_Previews: PreviewProvider {
     static var previews: some View {
-        UISliderRepresentation(value: .constant(50))
+        UISliderRepresentation(value: .constant(50), score: .constant(50))
     }
 }
 
