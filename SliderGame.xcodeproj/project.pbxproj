@@ -11,6 +11,7 @@
 		5D343CE22A73D6D80057FB72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D343CE12A73D6D80057FB72 /* ContentView.swift */; };
 		5D343CE42A73D6D90057FB72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D343CE32A73D6D90057FB72 /* Assets.xcassets */; };
 		5D343CE72A73D6D90057FB72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D343CE62A73D6D90057FB72 /* Preview Assets.xcassets */; };
+		5D343CEE2A73D99B0057FB72 /* UISliderRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D343CED2A73D99B0057FB72 /* UISliderRepresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		5D343CE12A73D6D80057FB72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5D343CE32A73D6D90057FB72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D343CE62A73D6D90057FB72 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5D343CED2A73D99B0057FB72 /* UISliderRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderRepresentation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				5D343CDF2A73D6D80057FB72 /* SliderGameApp.swift */,
 				5D343CE12A73D6D80057FB72 /* ContentView.swift */,
+				5D343CED2A73D99B0057FB72 /* UISliderRepresentation.swift */,
 				5D343CE32A73D6D90057FB72 /* Assets.xcassets */,
 				5D343CE52A73D6D90057FB72 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D343CEE2A73D99B0057FB72 /* UISliderRepresentation.swift in Sources */,
 				5D343CE22A73D6D80057FB72 /* ContentView.swift in Sources */,
 				5D343CE02A73D6D80057FB72 /* SliderGameApp.swift in Sources */,
 			);
