@@ -24,7 +24,6 @@ struct ContentView: View {
             }
             
             Button("Проверь себя") {
-                score = computeScore()
                 isAlerPresented.toggle()
             }
             .alert("Ваш результат:", isPresented: $isAlerPresented, actions: {}) {
@@ -33,6 +32,7 @@ struct ContentView: View {
             
             Button("Начать заново") {
                 randomizeValues()
+                score = computeScore()
             }
         }
         .padding()
